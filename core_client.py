@@ -1,5 +1,5 @@
 # coding: utf-8
-
+from globs_var import *
 import os
 import sys
 import platform
@@ -49,9 +49,6 @@ console.print('[green4]模块加载完成', end='\n\n')
 
 
 # ============================全局变量和检查区====================================
-
-addr = '127.0.0.1'          # Server 地址
-port = '6006'               # Server 端口
 
 shortcut     = 'caps lock'  # 控制录音的快捷键，默认是 CapsLock
 threshold    = 0.3          # 按下快捷键后，触发语音识别的时间阈值
@@ -455,9 +452,6 @@ def stream_open():
         console.print(f'使用默认音频设备：[italic]{device["name"]}', end='\n\n')
     except UnicodeDecodeError:
         console.print("由于编码问题，暂时无法获得麦克风设备名字", end='\n\n', style='bright_red')
-    except sd.PortAudioError:
-        console.print("没有找到麦克风设备", end='\n\n', style='bright_red')
-        input('按回车键退出'); sys.exit()
         
 
     # 打开音频流

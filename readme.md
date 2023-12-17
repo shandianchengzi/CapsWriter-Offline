@@ -88,18 +88,17 @@
 
 ## 修改配置
 
-你可以打开 `core_server.py` ，在开头部分有注释，指导你修改服务端的端口，默认是 `6006`
+你可以打开 `globs.py` ，在开头部分有注释，指导你修改连接的地址和端口：
+
+- 连接的地址和端口，默认是 `127.0.0.1` 和 `60066` 
 
 你可以打开 `core_client.py` ，在开头部分有注释，指导你修改客户端的：
 
-- 连接的地址和端口，默认是 `127.0.0.1` 和 `6006` 
 - 键盘快捷键
 - 是否要保存录音文件
 - 要移除识别结果末尾的哪些标点，（如果你想把问号也删除掉，可以在这边加上）
 
 ![image-20230606115835962](assets/image-20230606115835962.png)  
-
-
 
 
 ## 下载模型
@@ -136,11 +135,13 @@ sudo apt-get install xclip   # 让core_client.py正常运行
 ### Windows 端
 
 ```powershell
-pip install -r requirements-server.txt
+pip install -r requirements-server.txt -i https://mirror.sjtu.edu.cn/pypi/web/simple
 pip install -r requirements-client.txt
 ```
 
-有些依赖在3.11还暂时不无法安装，建议使用 `python 3.10` 
+有些依赖在3.11还暂时不无法安装，建议使用 [`python 3.10`](https://www.python.org/downloads/release/python-3100/) 
+
+装好 `python 3.10` 之后，可以使用 `/pathto/python310 -m venv python310/` 在当前目录下创建一个虚拟环境，避免还要额外添加 `python3.10` 的环境变量等操作。注意，如果你是 Windows 用户，请在使用 `venv` 时避免使用 PowerShell 对虚拟环境激活，用 cmd 或者 git bash 作为替代都可以。
 
 ### Mac 端
 

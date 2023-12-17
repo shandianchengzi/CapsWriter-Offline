@@ -1,0 +1,11 @@
+2023/
+2024/
+
+python310/
+__pycache__/
+
+python310.dll
+start_client.exe
+start_server.exe
+libs/
+base_library.zip

@@ -1,8 +1,10 @@
 
+from globs_var import *
 from os import path, sep, mkdir, makedirs, getcwd, chdir
 import sys
-if 'BASE_DIR' not in globals():
-    BASE_DIR = path.dirname(__file__); 
+# if 'BASE_DIR' not in globals():
+#     BASE_DIR = path.dirname(__file__); 
+BASE_DIR = "\\\\127.0.0.1\\share\\A-other-share\\software\\life\\CapsWriter-Offline"
 if getcwd() != BASE_DIR:
     chdir(BASE_DIR)     # 如果cwd不是文件根目录，就切换过去。这是为了用相对目录加载模型文件，以避免中文路径问题
 import rich
@@ -27,9 +29,6 @@ from util.chinese_itn import chinese_to_num
 
 
 # ============================全局变量和检查区====================================
-
-addr = '0.0.0.0'
-port = '6006'
 
 format_num      = True      # 输出时是否将中文数字转为阿拉伯数字
 format_punc     = True      # 输出时是否启用标点符号引擎（在 MacOS 上标点引擎似乎有问题，应当改为 False）
