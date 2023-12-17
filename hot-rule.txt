@@ -2,3 +2,9 @@
 
 毫安时   =      mAh
 赫兹      =      Hz
+艾特 QQ 点 com = @qq.com
+艾特 = @
+一六三点 com = 163.com
+edu 点 = edu.
+点 com = .com
+点 cn = .cn

@@ -1,8 +1,16 @@
 # 在此文件放置英文热词
 # Put English hot words here, one per line. Line starts with # will be ignored. 
 
+# Python
+util
+
+# Github
+PR
+Pull Request
+issue
 
 # 杂项
+hust
 IP
 IO
 PC
