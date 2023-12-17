@@ -28,6 +28,9 @@ from util.chinese_itn import chinese_to_num
 
 # ============================全局变量和检查区====================================
 
+addr = '0.0.0.0'          # Server 地址
+port = '60067'              # Server 端口
+
 format_num      = True      # 输出时是否将中文数字转为阿拉伯数字
 format_punc     = True      # 输出时是否启用标点符号引擎（在 MacOS 上标点引擎似乎有问题，应当改为 False）
 

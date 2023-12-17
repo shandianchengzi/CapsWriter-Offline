@@ -51,6 +51,7 @@ console.print('[green4]模块加载完成', end='\n\n')
 # ============================全局变量和检查区====================================
 
 addr = '127.0.0.1'          # Server 地址
+port = '60067'              # Server 端口
 
 shortcut     = 'caps lock'  # 控制录音的快捷键，默认是 CapsLock
 threshold    = 0.3          # 按下快捷键后，触发语音识别的时间阈值
@@ -219,7 +220,7 @@ def do_save_audio(data:np.array, text:str, start_time:float):
     file_wav = folder_assets / f'({time_ymdhms}){text[:audio_name_len]}.wav'
     file_mp3 = file_wav.with_suffix('.mp3')
     file_audio = None
-    
+
     if shutil.which('ffmpeg'):  # 用户已安装 ffmpeg，则输出为 mp3 格式
         file_audio = file_mp3
         # 将数据转换为字节形式

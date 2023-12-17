@@ -1,7 +1,10 @@
 import re
 
-addr = '127.0.0.1'          # Server 地址
-port = '60066'              # Server 端口
+save_audio = True           # 是否保存录音文件+文本记录
+save_audio_ = False         # 是否保存录音文件
+audio_name_len = 20         # 将录音识别结果的前多少个字存储到录音文件名中，建议不要超过200
+
+port = '60066'              # Server 端口 (Remote)
 format_spell = True         # 输出时是否调整中英之间的空格
 
 # ========================================================================
