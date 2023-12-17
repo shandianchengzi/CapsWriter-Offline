@@ -53,7 +53,7 @@ console.print('[green4]模块加载完成', end='\n\n')
 shortcut     = 'caps lock'  # 控制录音的快捷键，默认是 CapsLock
 threshold    = 0.3          # 按下快捷键后，触发语音识别的时间阈值
 restore_key  = True         # 录音完成，松开按键后，是否自动再按一遍，以恢复 CapsLock 或 Shift 等之前的状态
-paste        = True         # 是否以写入剪切板然后模拟 Ctrl-V 粘贴的方式输出结果
+paste        = False        # 是否以写入剪切板然后模拟 Ctrl-V 粘贴的方式输出结果
 restore_clip = True         # 模拟粘贴后是否恢复剪贴板
 
 save_audio = True           # 是否保存录音文件
