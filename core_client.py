@@ -51,6 +51,12 @@ console.print('[green4]模块加载完成', end='\n\n')
 # ============================全局变量和检查区====================================
 
 addr = '127.0.0.1'          # Server 地址
+# wait user input
+is_remote = input('是否远程连接 Server？[y/N]：')
+if is_remote.lower() == 'y':
+    port = '60066'          # Server 端口 (Remote)
+else:
+    port = '60067'          # Server 端口 (Local)
 
 shortcut     = 'caps lock'  # 控制录音的快捷键，默认是 CapsLock
 threshold    = 0.3          # 按下快捷键后，触发语音识别的时间阈值

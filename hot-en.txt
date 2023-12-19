@@ -1,6 +1,16 @@
 # 在此文件放置英文热词
 # Put English hot words here, one per line. Line starts with # will be ignored. 
 
+# CSE
+rule
+ping
+IoT
+Hijacking
+IP
+Fuzzing
+CyberSecurity
+branch
+
 # Python
 util
 
@@ -9,8 +19,11 @@ PR
 Pull Request
 issue
 
+# HUST
+HUST
+
 # 杂项
-hust
+deadline
 IP
 IO
 PC
