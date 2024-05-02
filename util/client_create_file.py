@@ -7,6 +7,7 @@ import time
 from os import makedirs
 from wave import Wave_write
 import tempfile
+from config import ClientConfig as Config
 
 
 def create_file(channels: int, time_start: float) -> Tuple[Path, Union[Popen, Wave_write]]:
@@ -19,6 +20,9 @@ def create_file(channels: int, time_start: float) -> Tuple[Path, Union[Popen, Wa
     makedirs(folder_path, exist_ok=True)
     file_path = tempfile.mktemp(prefix=f'({time_ymdhms})', dir=folder_path)
     file_path = Path(file_path)
+
+    if not Config.save_audio:
+        return file_path, None
 
     if shutil.which('ffmpeg'):
         # 用户已安装 ffmpeg，则输出到 mp3 文件
