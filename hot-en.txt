@@ -6,10 +6,13 @@ rule
 ping
 IoT
 Hijacking
-IP
 Fuzzing
 CyberSecurity
 branch
+launcher
+fuzzer
+fuzz
+wiki
 
 # Python
 util
